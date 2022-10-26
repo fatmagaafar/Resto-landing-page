@@ -387,44 +387,78 @@ body {
 /* -----------------start highlight----------------- */
 .highlight {
   background: url("assets/images/dust.png") center center/cover repeat;
-  background-color:#303030 ;
-  
+  background-color: #303030;
 }
-.highlight .card
-{
+.highlight .card {
   background-color: transparent !important;
-  border: 2px solid transparent ;
+  border: 2px solid transparent;
   max-width: 540px;
-  
 }
 /* .highlight .card p:nth-child(1)
 {
   font-size: x-large;
 } */
 
-.highlight div:nth-child(2) 
-{
+.highlight div:nth-child(2) {
   font-weight: bold;
 }
-.highlight div:nth-child(2)>h2
-{
-   font-size: 60px;
-   
+.highlight div:nth-child(2) > h2 {
+  font-size: 60px;
 }
-.highlight div:nth-child(2)>button
-{
-   height: 10%;
-   background-color: #fff;
-   border: 1px solid #fff ;
-   color: black;
+.highlight div:nth-child(2) > button {
+  height: 10%;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: black;
 }
 
 /* -----------------end highlight----------------- */
 
-/* -----------------start contactus----------------- */
+/* -----------------start footer----------------- */
 
+.footer {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  background: #000;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
 
-/* -----------------end contactus----------------- */
+.footer .horizontal-row {
+  /* width: 100%; */
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .horizontal-row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .horizontal-row a:hover {
+  color: #fff;
+}
+
+.footer .horizontal-row ul {
+  width: 100%;
+}
+
+.footer .horizontal-row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .horizontal-row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* -----------------end footer----------------- */
 @keyframes md-line {
   0% {
     height: 100px;
@@ -434,5 +468,20 @@ body {
   }
   100% {
     height: 100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .horizontal-row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .horizontal-row a i {
+    margin: 0% 3%;
   }
 }
